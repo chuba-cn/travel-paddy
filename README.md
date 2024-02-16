@@ -26,7 +26,7 @@ This is a solution to the [Travel Journal solo project on Scrimba](https://scrim
 
 ### Screenshot
 
-![screenshot](/src/screenshots/Home.png)
+![screenshot](./src/screenshots/Home.PNG)
 
 ### Links
 
