@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: Poppins, sans-serif;
+}
+
+.grey{
+    color: cadetblue;
+}
+
+.nav{
+    padding: 5px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+    background-color: greenyellow;
+    gap: 5px;
+}
+
+.nav--icon{
+    color: navy;
+    height: 2em;
+}
+
+.nav--title{
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: -0.075em;
+    line-height: 1em;
+}
+
+.place-list {
+    margin: 65px auto 15px auto;
+    width: 85%;
+}
+
+.place{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 70px;
+}
+
+.place--img{
+    align-self: center;
+    height: 100%;
+    width: 20em;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 0.5em;
+    transform: scale(1);
+    transition: all 650ms ease-in-out
+}
+
+/* .place--img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
+      0 4px 4px rgba(0, 0, 0, 0.11), 0 8px 8px rgba(0, 0, 0, 0.11),
+      0 16px 16px rgba(0, 0, 0, 0.11), 0 32px 32px rgba(0, 0, 0, 0.11);
+    filter: brightness(80%);
+  } */
+
+.place--details{
+    padding: 10px
+}
+
+.place--icon{
+    display: inline;
+    width: 15px;
+    margin-right: 5px;
+    color: yellowgreen;
+}
+
+.place--location{
+    display: inline;
+    margin-right: 30px;
+    text-transform: uppercase;
+}
+
+.place--link{
+    filter: brightness(35%);
+    font-size: 0.75rem;
+}
+
+.place--link:hover{
+    filter: brightness(100%);
+}
+
+.place--link:visited{
+    color: green
+}
+
+.place--link:active{
+    color: greenyellow;
+}
+
+.place--name{
+    margin-top: 2px;
+    margin-bottom: 5px;
+    font-size: 32px;
+}
+
+.place--dates{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.place--description{
+    margin-top: 0;
+}
+
+@media (max-width: 768px) {
+    .place {
+      flex-direction: column;
+    }
+  
+    .place--img {
+      width: 100%;
+    }
+  
+    .place--details {
+      margin: 1em 0 0 0;
+      padding: 0;
+    }
+  }
